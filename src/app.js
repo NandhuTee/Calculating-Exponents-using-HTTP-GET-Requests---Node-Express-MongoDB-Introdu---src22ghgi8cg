@@ -62,7 +62,7 @@ const server = http.createServer((req, res) =>
   else 
   {
     // For non-POST requests or different routes, respond with 405 Method Not Allowed
-    res.writeHead(405, {'Content-Type': 'text/plain'});
+    res.writeHead(404, {'Content-Type': 'text/plain'});
     res.end('Method Not Allowed');
   }
 });
